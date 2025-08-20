@@ -3,6 +3,8 @@
 $primaryColor: #121127;
 $accentColor: #444BD3;
 $lightColor: #fff;
+$sliderLightColor: #FFF0F5;
+$sliderDarkColor: #9D097C;
 
 /* ---------- Reset styles ---------- */
 
@@ -181,6 +183,21 @@ body {
     }
 }
 
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+}
+
+.pretitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    color: $accentColor;
+}
+
 /* ---------- Header styles ---------- */
 
 .header {
@@ -211,6 +228,103 @@ body {
             &:hover {
                 color: $accentColor;
                 opacity: 1;
+            }
+        }
+    }
+}
+
+/* ---------- Creative styles ---------- */
+
+.creative {
+    padding: 24px 0 96px;
+
+    &-slider {
+        padding: 40px 0;
+
+        &-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            margin-top: 40px;
+        }
+
+        &-pagination {
+            width: fit-content !important;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            .swiper-pagination-bullet {
+                width: 4px;
+                height: 4px;
+                margin: 0 !important;
+            }
+
+            .swiper-pagination-bullet-active {
+                width: 24px;
+                height: 24px;
+                border: 1px solid $sliderDarkColor;
+                background-color: transparent;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 8px;
+                    height: 8px;
+                    background-color: $sliderDarkColor;
+                    border-radius: 100px;
+                }
+            }
+        }
+
+        &-button-prev,
+        &-button-next {
+            width: 40px;
+            height: 40px;
+            background-color: $sliderLightColor;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 100px;
+            transition: .3s;
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+
+        &-button-prev {
+            background-image: url('../img/arrow-left.svg');
+        }
+
+        &-button-next {
+            background-image: url('../img/arrow-right.svg');
+        }
+
+        &-slide {
+            padding: 56px 24px;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px 0 #12112714;
+
+            &__icon {
+                margin-bottom: 24px;
+            }
+
+            &__title {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 140%;
+                margin-bottom: 16px;
+            }
+
+            &__description {
+                line-height: 180%;
+                font-size: 14px;
+                opacity: .56;
             }
         }
     }

@@ -15,7 +15,7 @@
   \************************/
 /***/ (function() {
 
-eval("document.addEventListener('DOMContentLoaded', function () {\n    \n});\n\n//# sourceURL=webpack://gulp-2025/./src/js/main.js?");
+eval("document.addEventListener('DOMContentLoaded', function () {\n\n    const crerativeSlider = new Swiper('.creative-slider', {\n        loop: true,\n        pagination: {\n            el: '.creative-slider-pagination',\n            clickable: true,\n        },\n        navigation: {\n            nextEl: '.creative-slider-button-next',\n            prevEl: '.creative-slider-button-prev',\n        },\n        slidesPerView: 4,\n        spaceBetween: 24,\n    });\n\n});\n\n//# sourceURL=webpack://gulp-2025/./src/js/main.js?");
 
 /***/ })
 
