@@ -438,4 +438,41 @@ body {
             line-height: 180%;
         }
     }
+
+    &__button {
+        height: 52px;
+        text-transform: capitalize;
+    }
+}
+
+/* ---------- Registration styles ---------- */
+
+.registration {
+    padding: 96px 0;
+    background-color: $accentColor;
+
+    &-inner {
+        max-width: 744px;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        opacity: .56;
+        font-size: 20px;
+        line-height: 180%;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        height: 52px;
+    }
 }
