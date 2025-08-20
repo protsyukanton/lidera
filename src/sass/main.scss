@@ -239,7 +239,8 @@ body {
     padding: 24px 0 96px;
 
     &-slider {
-        padding: 40px 0;
+        padding: 20px;
+        margin: 0 -20px;
 
         &-controls {
             display: flex;
@@ -308,7 +309,7 @@ body {
         &-slide {
             padding: 56px 24px;
             border-radius: 12px;
-            box-shadow: 0 20px 50px 0 #12112714;
+            box-shadow: 0 10px 10px 0 #12112714;
 
             &__icon {
                 margin-bottom: 24px;
