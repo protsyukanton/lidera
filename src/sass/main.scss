@@ -132,10 +132,11 @@ label {
 body {
     font-family: 'Poppins';
     font-weight: 400;
+    color: $primaryColor;
 }
 
 .container {
-    max-width: 1128px;
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -326,6 +327,81 @@ body {
                 line-height: 180%;
                 font-size: 14px;
                 opacity: .56;
+            }
+        }
+    }
+}
+
+/* ---------- Revenue styles ---------- */
+
+.revenue {
+    background-color: #F9F9FB;
+    padding: 96px 0;
+
+    &-items {
+        display: flex;
+        gap: 120px;
+        margin-top: 40px;
+    }
+
+    &-item {
+        max-width: 456px;
+
+        &__title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 140%;
+            color: $accentColor;
+            margin-bottom: 12px;
+        }
+
+        &__description {
+            color: $primaryColor;
+            opacity: .56;
+            font-size: 16px;
+            line-height: 180%;
+            margin-bottom: 32px;
+        }
+
+        &__image {
+            box-shadow: 0 7px 30px 0 #1211271F;
+
+            &-wrapper {
+                position: relative;
+            }
+
+            &-label {
+                position: absolute;
+                max-width: 196px;
+                right: -96px;
+                bottom: 36px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 32px;
+
+            & li {
+                font-size: 14px;
+                line-height: 180%;
+                position: relative;
+                padding-left: 30px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: block;
+                    width: 17px;
+                    height: 17px;
+                    border-radius: 100px;
+                    background: #90ECF4 url('../img/check-icon.svg') no-repeat center center / 50%;
+                }
             }
         }
     }
