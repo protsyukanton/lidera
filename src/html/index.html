@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet", href="/css/main.min.css">
-	<script src="/js/main.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/css/main.min.css">
+
 </head>
+
 <body>
 
-	<img src="../img/logotype.svg" alt="">
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<a class="header__logotype" href="">
+					<img src="../img/logotype.svg" alt="">
+				</a>
+				<nav class="header-menu">
+					<a class="header-menu__item" href="">Product</a>
+					<a class="header-menu__item" href="">Features</a>
+					<a class="header-menu__item" href="">Marketplace</a>
+					<a class="header-menu__item" href="">Company</a>
+				</nav>
+				<div class="header-buttons">
+					<button class="header-buttons__item button--transparent">Sign in</button>
+					<button class="header-buttons__item button">Sign up</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /.header -->
+
+	<script src="/js/main.js"></script>
 </body>
+
 </html>

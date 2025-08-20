@@ -115,20 +115,27 @@ label {
 
 /* ---------- Global styles ---------- */
 
-body {
-    font-family: "Poppins";
-    font-weight: 400;
-}
-
 * {
     padding: 0px;
     margin: 0px;
     border: none;
+    box-sizing: border-box;
 
     &::before,
     &::after {
         box-sizing: border-box;
     }
+}
+
+body {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1128px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .button {
@@ -140,23 +147,71 @@ body {
     padding: 0 24px;
     transition: .4s;
     border-radius: 6px;
-}
 
-.button:not(.button--light):hover {
-    color: $accentColor;
-    background-color: transparent;
-}
+    &:hover {
+        color: $accentColor;
+        background-color: transparent;
+    }
 
-.button--light {
-    color: $accentColor;
-    background-color: $lightColor;
-}
+    &--transparent {
+        font-size: 14px;
+        height: 40px;
+        padding: 0 24px;
+        transition: .4s;
+        border-radius: 6px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: $primaryColor;
 
-.button--light:hover {
-    color: $lightColor;
-    background-color: transparent;
-    border: 1px solid $lightColor;
-}
+        &:hover {
+            color: $accentColor;
+            border: 1px solid $accentColor;
+        }
+    }
 
+    &--light {
+        color: $accentColor;
+        background-color: $lightColor;
+
+        &:hover {
+            color: $lightColor;
+            background-color: transparent;
+            border: 1px solid $lightColor;
+        }
+    }
+}
 
 /* ---------- Header styles ---------- */
+
+.header {
+    padding: 32px 0;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &-buttons {
+        margin-left: auto;
+    }
+
+    &-menu {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        &__item {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            opacity: .72;
+            transition: .3s;
+
+            &:hover {
+                color: $accentColor;
+                opacity: 1;
+            }
+        }
+    }
+}
