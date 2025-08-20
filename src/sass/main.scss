@@ -406,3 +406,36 @@ body {
         }
     }
 }
+
+/* ---------- Price styles ---------- */
+
+.price {
+    padding: 60px 0;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &-text {
+        flex: 1;
+
+        &__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 140%;
+            margin-bottom: 8px;
+
+            & span {
+                color: $accentColor;
+            }
+        }
+
+        &__description {
+            opacity: .56;
+            font-size: 18px;
+            line-height: 180%;
+        }
+    }
+}
