@@ -261,6 +261,7 @@ body {
                 width: 4px;
                 height: 4px;
                 margin: 0 !important;
+                transition: .3s;
             }
 
             .swiper-pagination-bullet-active {
@@ -474,5 +475,63 @@ body {
 
     &__button {
         height: 52px;
+    }
+}
+
+/* ---------- Footer styles ---------- */
+
+.footer {
+    padding-top: 56px;
+
+    &-top {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    }
+
+    &__description {
+        opacity: .56;
+        font-size: 14px;
+        line-height: 180%;
+        margin: 24px 0;
+    }
+
+    &-socials {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &-column {
+        &__title {
+            opacity: .4;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 170%;
+            letter-spacing: .8px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            &__item {
+                font-size: 14px;
+                line-height: 180%;
+            }
+        }
+    }
+
+    &-bottom {
+        border-top: 1px solid #1211271F;
+        padding: 37px 0 40px;
+        margin-top: 70px;
+        opacity: .56;
+        font-size: 16px;
+        line-height: 180%;
+        text-align: center;
     }
 }
