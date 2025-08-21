@@ -25,17 +25,36 @@
 					<img src="../img/logotype.svg" alt="">
 				</a>
 				<nav class="header-menu">
-					<a class="header-menu__item" href="">Product</a>
-					<a class="header-menu__item" href="">Features</a>
-					<a class="header-menu__item" href="">Marketplace</a>
-					<a class="header-menu__item" href="">Company</a>
+					<a class="header-menu__item" href="#">Product</a>
+					<a class="header-menu__item" href="#">Features</a>
+					<a class="header-menu__item" href="#">Marketplace</a>
+					<a class="header-menu__item" href="#">Company</a>
 				</nav>
 				<div class="header-buttons">
 					<button class="header-buttons__item button--transparent">Sign in</button>
 					<button class="header-buttons__item button open-popup" data-popup="subscribe">Sign up</button>
 				</div>
+				<button class="header-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 			</div>
 		</div>
+
+		<div class="header-mobile">
+			<nav class="header-mobile-menu">
+				<a class="header-mobile-menu__item" href="#">Product</a>
+				<a class="header-mobile-menu__item" href="#">Features</a>
+				<a class="header-mobile-menu__item" href="#">Marketplace</a>
+				<a class="header-mobile-menu__item" href="#">Company</a>
+			</nav>
+			<div class="header-mobile-buttons">
+				<button class="header-mobile-buttons__item button--transparent">Sign in</button>
+				<button class="header-mobile-buttons__item button open-popup" data-popup="subscribe">Sign up</button>
+			</div>
+		</div>
+
 	</header>
 	<!-- /.header -->
 
@@ -44,6 +63,30 @@
 		<section class="hero">
 			<div class="container">
 				<div class="hero-inner">
+					<div class="hero-video-voucher">
+						<div class="hero-video-voucher__icon">
+							<img src="../img/voucher-icon.svg" alt="">
+						</div>
+						<div class="hero-video-voucher-data">
+							<div class="hero-video-voucher-data__title">Voucher</div>
+							<div class="hero-video-voucher-data__price">+$10, 000</div>
+						</div>
+					</div>
+					<div class="hero-video__arrow"></div>
+					<div class="hero-video-team">
+						<div class="hero-video-team-header">
+							<div class="hero-video-team-header__icon">
+								<img src="../img/success-icon.svg" alt="">
+							</div>
+							<div class="hero-video-team-header-data">
+								<div class="hero-video-team-header-data__title">Successfully sent</div>
+								<div class="hero-video-team-header-data__total">200+ send total</div>
+							</div>
+						</div>
+						<div class="hero-video-team-body">
+							<img class="hero-video-team-body__image" src="../img/team.png" alt="">
+						</div>
+					</div>
 					<div class="hero-header">
 						<h1 class="hero-header__title">Have no fear of perfection, <br> you'll never reach it.</h1>
 						<p class="hero-header__description">Create interactive user flow diagrams that tell a story.</p>
@@ -55,30 +98,7 @@
 							data-poster="../img/hero-video-poster.png">
 							<source src="../img/hero-video.mp4" type="video/mp4" />
 						</video>
-						<div class="hero-video-voucher">
-							<div class="hero-video-voucher__icon">
-								<img src="../img/voucher-icon.svg" alt="">
-							</div>
-							<div class="hero-video-voucher-data">
-								<div class="hero-video-voucher-data__title">Voucher</div>
-								<div class="hero-video-voucher-data__price">+$10, 000</div>
-							</div>
-						</div>
-						<div class="hero-video__arrow"></div>
-						<div class="hero-video-team">
-							<div class="hero-video-team-header">
-								<div class="hero-video-team-header__icon">
-									<img src="../img/success-icon.svg" alt="">
-								</div>
-								<div class="hero-video-team-header-data">
-									<div class="hero-video-team-header-data__title">Successfully sent</div>
-									<div class="hero-video-team-header-data__total">200+ send total</div>
-								</div>
-							</div>
-							<div class="hero-video-team-body">
-								<img class="hero-video-team-body__image" src="../img/team.png" alt="">
-							</div>
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -197,7 +217,7 @@
 							Includes every feature we offer plus unlimited projects and unlimited users
 						</div>
 					</div>
-					<button class="price__button button">Get Started Now</button>
+					<button class="price__button button open-popup" data-popup="subscribe">Get Started Now</button>
 				</div>
 			</div>
 		</section>
@@ -214,7 +234,8 @@
 						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint velit officia consequat
 						duis enim velit mollit.
 					</p>
-					<button class="registration__button button button--light">Sign up for free</button>
+					<button class="registration__button button button--light open-popup" data-popup="subscribe">Sign up
+						for free</button>
 				</div>
 			</div>
 		</section>
@@ -359,7 +380,8 @@
 						25% Off on your first purchase.
 					</p>
 					<form class="popup-action-form" action="#">
-						<input class="popup-action-form__field" type="email" name="email" placeholder="Email address" required>
+						<input class="popup-action-form__field" type="email" name="email" placeholder="Email address"
+							required>
 						<button class="popup-action-form__button">Subscribe</button>
 						<div class="popup-action-form__policy">
 							By signing up, you agree to <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.

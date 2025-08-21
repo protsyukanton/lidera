@@ -14,6 +14,35 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         slidesPerView: 4,
         spaceBetween: 24,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 24
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 24
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 24
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            }
+        }
+    });
+
+
+    /* ---------- Mobile menu ---------- */
+
+    document.querySelector('.header-burger').addEventListener('click', function () {
+        this.classList.toggle('active');
+        document.querySelector('.header-mobile').classList.toggle('active');
+        document.querySelectorAll('body, html').forEach(item => {
+            item.classList.toggle('lock');
+        });
     });
 
 
