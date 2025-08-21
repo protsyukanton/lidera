@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    /* ---------- Creative slider ---------- */
+
     const crerativeSlider = new Swiper('.creative-slider', {
         loop: true,
         pagination: {
@@ -12,6 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         slidesPerView: 4,
         spaceBetween: 24,
+    });
+
+
+    /* ---------- Hero video ---------- */
+
+    const player = new Plyr('.hero-video__item', {
+        controls: ['play-large']
     });
 
 });

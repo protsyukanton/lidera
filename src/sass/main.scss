@@ -234,6 +234,177 @@ body {
     }
 }
 
+/* ---------- Hero styles ---------- */
+
+.hero {
+    padding: 88px 0 163px;
+
+    &-header {
+        text-align: center;
+        position: relative;
+
+        &__title {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 120%;
+            margin-bottom: 20px;
+        }
+
+        &__description {
+            opacity: .72;
+            font-size: 20px;
+            line-height: 180%;
+        }
+
+        &__diagramma {
+            position: absolute;
+            top: 20%;
+            left: 0;
+        }
+
+        &__memoji {
+            position: absolute;
+            right: 0;
+            bottom: 30%;
+        }
+    }
+
+    &-video {
+        position: relative;
+        max-width: 744px;
+        margin: 72px auto 0 auto;
+
+        &-voucher {
+            position: absolute;
+            z-index: -1;
+            top: -50px;
+            left: -145px;
+            box-shadow: 0 40px 80px 0 #00000014;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 19px;
+            border-radius: 12px;
+            background-color: #fff;
+
+            &__icon {
+                width: 49px;
+                height: 49px;
+                border-radius: 100px;
+                background: linear-gradient(#F78291, #E75C6B);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &-data {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+
+                &__title {
+                    font-size: 17px;
+                    line-height: 120%;
+                    font-weight: 700;
+                }
+
+                &__price {
+                    color: #8B898F;
+                    font-size: 11px;
+                    line-height: 110%;
+                }
+            }
+        }
+
+        &__arrow {
+            width: 104px;
+            height: 126px;
+            position: absolute;
+            left: -150px;
+            bottom: -100px;
+            background: url('../img/arrow-icon.svg') no-repeat center center / cover;
+        }
+
+        &-team {
+            position: absolute;
+            z-index: 1;
+            bottom: -60px;
+            right: -186px;
+            box-shadow: 0 40px 80px 0 #00000014;
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+            padding: 21px 22px;
+            border-radius: 12px;
+            background-color: #fff;
+
+            &-header {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                &__icon {
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 100px;
+                    background-color: #FFBB24;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &-data {
+
+                    &__title {
+                        font-size: 17px;
+                        line-height: 120%;
+                        font-weight: 700;
+                    }
+
+                    &__total {
+                        color: #8B898F;
+                        font-size: 11px;
+                        line-height: 110%;
+                    }
+
+                }
+
+            }
+
+            &-body {
+                &__image {
+                    max-width: 106px;
+                }
+            }
+        }
+    }
+}
+
+.plyr--video.plyr--stopped .plyr__controls,
+.plyr--video.plyr--paused .plyr__controls {
+    opacity: 0;
+}
+
+.plyr--video.plyr--stopped .plyr__controls button,
+.plyr--video.plyr--paused .plyr__controls button {
+    pointer-events: none;
+}
+
+.plyr {
+    border-radius: 16px;
+
+    & .plyr__control--overlaid {
+        width: 72px;
+        height: 72px;
+        background: #fff url('../img/play-icon.svg') no-repeat 55% center / 30%;
+        opacity: 1;
+
+        & svg {
+            display: none;
+        }
+    }
+}
+
 /* ---------- Creative styles ---------- */
 
 .creative {

@@ -11,6 +11,7 @@
 		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 	<link rel="stylesheet" href="/css/main.min.css">
 
 </head>
@@ -39,6 +40,50 @@
 	<!-- /.header -->
 
 	<main class="main">
+
+		<section class="hero">
+			<div class="container">
+				<div class="hero-inner">
+					<div class="hero-header">
+						<h1 class="hero-header__title">Have no fear of perfection, <br> you'll never reach it.</h1>
+						<p class="hero-header__description">Create interactive user flow diagrams that tell a story.</p>
+						<img class="hero-header__diagramma" src="../img/diagramma-icon.svg" alt="">
+						<img class="hero-header__memoji" src="../img/memoji-icon.svg" alt="">
+					</div>
+					<div class="hero-video">
+						<video id="player" class="hero-video__item" playsinline controls
+							data-poster="../img/hero-video-poster.png">
+							<source src="../img/hero-video.mp4" type="video/mp4" />
+						</video>
+						<div class="hero-video-voucher">
+							<div class="hero-video-voucher__icon">
+								<img src="../img/voucher-icon.svg" alt="">
+							</div>
+							<div class="hero-video-voucher-data">
+								<div class="hero-video-voucher-data__title">Voucher</div>
+								<div class="hero-video-voucher-data__price">+$10, 000</div>
+							</div>
+						</div>
+						<div class="hero-video__arrow"></div>
+						<div class="hero-video-team">
+							<div class="hero-video-team-header">
+								<div class="hero-video-team-header__icon">
+									<img src="../img/success-icon.svg" alt="">
+								</div>
+								<div class="hero-video-team-header-data">
+									<div class="hero-video-team-header-data__title">Successfully sent</div>
+									<div class="hero-video-team-header-data__total">200+ send total</div>
+								</div>
+							</div>
+							<div class="hero-video-team-body">
+								<img class="hero-video-team-body__image" src="../img/team.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.hero -->
 
 		<section class="creative">
 			<div class="container">
@@ -303,6 +348,7 @@
 	<!-- /.footer -->
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 	<script src="/js/main.js"></script>
 </body>
 
