@@ -1,6 +1,6 @@
 # Тестовое задание для Lidera.agency
 
-## Посмотреть сайт - [тык]([https://pages.github.com/](http://antonp4z.beget.tech/))
+## Посмотреть сайт - [тык](http://antonp4z.beget.tech/)
 
 ## ⚠️ Техническое задание
 - Сверстайте этот макет без использования глобальных js/css фреймворков и библиотек (например, react, vue, bootstrap, tailwind)
