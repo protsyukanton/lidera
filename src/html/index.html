@@ -32,7 +32,7 @@
 				</nav>
 				<div class="header-buttons">
 					<button class="header-buttons__item button--transparent">Sign in</button>
-					<button class="header-buttons__item button">Sign up</button>
+					<button class="header-buttons__item button open-popup" data-popup="subscribe">Sign up</button>
 				</div>
 			</div>
 		</div>
@@ -346,6 +346,32 @@
 		</div>
 	</footer>
 	<!-- /.footer -->
+
+	<div class="popup-wrapper" data-popup="subscribe">
+		<dialog class="popup" open>
+			<button class="popup__close"></button>
+			<div class="popup-body">
+				<div class="popup-action">
+					<img class="popup-action__logotype" src="../img/logotype-popup.svg" alt="">
+					<div class="popup-action__title">Join the club</div>
+					<p class="popup-action__description">
+						Subscribe and Get an Extra <br>
+						25% Off on your first purchase.
+					</p>
+					<form class="popup-action-form" action="#">
+						<input class="popup-action-form__field" type="email" name="email" placeholder="Email address" required>
+						<button class="popup-action-form__button">Subscribe</button>
+						<div class="popup-action-form__policy">
+							By signing up, you agree to <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.
+						</div>
+					</form>
+				</div>
+				<div class="popup-image">
+					<img class="popup-image__item" src="../img/popup-image.png" alt="">
+				</div>
+			</div>
+		</dialog>
+	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
