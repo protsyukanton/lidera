@@ -19,8 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* ---------- Hero video ---------- */
 
-    const player = new Plyr('.hero-video__item', {
+    const heroVideo = '.hero-video__item';
+    const player = new Plyr(heroVideo, {
         controls: ['play-large']
+    });
+
+    let popupFlag = false;
+
+    player.on('timeupdate', function () {
+        const currentTime = player.currentTime;
+        const duration = player.duration;
+        const halfTime = duration / 2;
+
+        if (currentTime >= halfTime && !popupFlag) {
+            popupFlag = true;
+            document.querySelector('.popup-wrapper[data-popup="subscribe"]').classList.add('popup-wrapper-show');
+        }
     });
 
 

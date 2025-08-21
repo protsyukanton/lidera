@@ -399,6 +399,11 @@ body {
         background: #fff url('../img/play-icon.svg') no-repeat 55% center / 30%;
         opacity: 1;
 
+        &:hover {
+            background: #fff url('../img/play-icon.svg') no-repeat 55% center / 30%;
+            opacity: .8;
+        }
+
         & svg {
             display: none;
         }
